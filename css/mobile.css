@@ -1,0 +1,68 @@
+@media (max-width: 630px) {
+	.container {
+		width: 100%;
+	}
+	h1 {
+		font-size: 32px;
+	}
+	.info-section {
+		padding: 30px 40px;
+	}
+	.main-nav ul {
+		height: auto;
+		padding-left: 0;
+	}
+	.main-nav ul li {
+		display: block;
+	}
+	.whatido {
+		height: auto;
+		overflow: hidden;
+	}
+	.whatido ul li {
+		width: 100%;
+		padding-bottom: 10px;
+	}
+
+	.whatido ul {
+		overflow: VISIBLE;
+	}
+	.education-experience img {
+		padding-bottom: 20px;
+	}
+	.education-experience ul li {
+		height: 100%;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	.education-experience img {
+		float: none;
+		padding-right: 0;
+		padding-bottom: 20px;
+	}
+	.education-experience span {
+		display: block;
+	}
+	.education-experience h3,
+	.education-experience p {
+		text-align: left;
+	}
+	.photos__list li {
+		float: none;
+		width: 100%;
+	}
+	.get-in-touch__list {
+		padding-left: 0;
+	}
+	.get-in-touch__list li {
+		float: left;
+		width: 50%;
+		padding: 0 20px;
+	}
+	.contact form {
+		width: 100%;
+	}
+	.contact label {
+		position: static;
+	}
+}

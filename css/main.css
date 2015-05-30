@@ -20,7 +20,9 @@ h1,h2,h3,h4,h5,h6 {
     padding: 1px;
     background-color: #989000;
 }
-
+li {
+    list-style: none;
+}
 .container p {
     padding: 1px;
 }
@@ -82,18 +84,37 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .whatido {
+    text-align: center;
     padding: 1px;
 }
 
 .info-section {
     background-color: #fff;
     padding:30px 60px;
-    text-align: center;
-}
+    border-bottom: 1px solid #EDEDED;
+
+/*    text-align: center;
+*/}
 
 .info-section .whatido__skill-list {
    list-style: none; 
 
+}
+.info-section header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+.whatido ul {
+    overflow: hidden;
+    padding-left: 0;
+}
+
+.whatido ul li {
+    padding-top: 100px;
+    width: 33.3%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center top;
 }
 
 .whatido__skill {
@@ -131,11 +152,12 @@ h1,h2,h3,h4,h5,h6 {
     clear:both;
 }
 .info-section header h2 {
-    font-size: 28px;
-    text-transform: uppercase;
+/*    font-size: 28px;
+*/    text-transform: uppercase;
     letter-spacing:  3px;
-    text-align: center;
-}
+/*    text-align: center;
+*/}
+
 .info-section header h2:after {
 /*    text-align: center;
     content: "";
@@ -145,117 +167,107 @@ h1,h2,h3,h4,h5,h6 {
     width:10%;
     margin: 0 auto;
     margin-top:10px;*/
-    content:"";
+/*    content:"";
     width: 80px;
     display: block;
     border-bottom: 3px solid black;
-    margin: auto;
+    margin: auto;*/
+    display: block;
+    content: "";
+    background-color: #333;
+    width: 2em;
+    height: .1em;
+    margin: .4em auto;
 }
 
 .info-section__description {
     font-style:  italic;
     text-align: center;
-    margin: 60px;
+/*    margin: 60px;
+*/}
+
+
+.education-experience ul li {
+    height: 250px;
 }
 
-.education-experience__list{
-    list-style: none;
+.education-experience ul {
+    padding-left: 0
 }
 
-.education-experience__list li{
-    margin-top: 30px;
-    overflow: hidden;
-}
-
-.education-experience__list img{
-    float: left;
-    width: 200px;
-}
-
-.education-experience__list div{
-    overflow: hidden;
-    padding-left: 20px;
-}
-/*.education-experience__list img {
-    float: left;
-}*/
-/*.education-experience ul li {
-    display: inline-block;
-}*/
-
-/*.education-experience__list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 0;
-}
-
-.education-experience__list li {
-    margin: 0 auto;
-}
-
-
-.float-left {
-    float: left;
-    margin-left:70px;
+.education-experience img {
     width: 180px;
     height: 180px;
+    float: left;
+    padding-right: 40px;
 }
-.content h3 {
-    text-align: center;
+
+.education-experience__title {
     font-weight: bold;
 }
-.content .education-experience__title {
-    text-align: center;
-    font-style: italic;
 
-}
-.content {
-    text-align: justify;
-    height: 180px;
-    width:  450px;
-    margin:  0 auto;
-    margin-bottom: 60px;
+.education-experience__description {
     overflow: hidden;
+}
+
+
+/*.education-experience ul {
+    padding-left: 0;
+}
+.education-experience__title {
+    font-weight: bold;
+}
+.education-experience__description {
+    overflow: hidden;
+}
+.education-experience__list img{
+    float: left;
+    width: 180px;
+    height: 180px;
+    padding-right: 40px;
 }*/
 
 
-.photos .photos__list {
+
+.photos__list {
     overflow: hidden;
-    width: 640px;
+    padding-left: 0;
+/*    width: 640px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 50px;*/
 }
 
-.photos .photos__list li {
+.photos__list li {
     box-sizing: border-box;
     float: left;
     padding: 10px;
     width: 25%;
 }
 
-.photos .photos__list li img {
+.photos__list li img {
     width: 100%;
 }
 
 
-.get-in-touch .get-in-touch__list {
+.get-in-touch__list {
     overflow: hidden;
-    width: 640px;
+/*    width: 640px;
     margin: 0 auto;
-    margin-top:50px;
-    list-style: none;
+    margin-top:50px;*/
+    text-align: center;
 }
 
-.get-in-touch .get-in-touch__list li {
+ .get-in-touch__list li {
     box-sizing: border-box;
     float: left;
-    padding: 20px;
+    padding: 0 50px;
     width: 25%;
 }
 
-.get-in-touch .get-in-touch__list li img {
+.get-in-touch__list li img {
     width:100%;
 }
+
 
 .contact input,
 .contact textarea {
@@ -264,8 +276,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .contact button {
-/*    height: 40px;
-*/    border: none;
+    height: 34px;
+    border: none;
     border-radius: 9999px;
 
     background: #ffd524;
@@ -289,47 +301,18 @@ h1,h2,h3,h4,h5,h6 {
 .contact form button {
   margin-bottom: 8px;
   width: 100%;
+  padding: 8px;
 }
-.contact form .smallbox {
+
+.contact form  {
     position: relative;
 }
 
-.contact form .smallbox label {
-    text-align: right;
+.contact   label {
     position:  absolute;
-    top:0;
-    left: -102%;
+    left: -105%;
     width: 100%;
+    text-align: right;
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.
