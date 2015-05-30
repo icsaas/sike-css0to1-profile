@@ -264,10 +264,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .contact button {
-    height: 40px;
-    border: none;
+/*    height: 40px;
+*/    border: none;
     border-radius: 9999px;
+
     background: #ffd524;
+
     cursor: pointer;
     text-shadow:0 1px 1px rgba(0,0,0,0.2);
     color:#fff;
@@ -280,15 +282,14 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0 auto;
 }
 
+
 .contact form label,
 .contact form input,
 .contact form textarea,
 .contact form button {
-    margin-bottom: 8px;
-    width: 100%;
-    padding: 12px 10px;
+  margin-bottom: 8px;
+  width: 100%;
 }
-
 .contact form .smallbox {
     position: relative;
 }
